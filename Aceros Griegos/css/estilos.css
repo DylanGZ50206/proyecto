@@ -1,0 +1,23 @@
+:root {
+  --ag-azul: #007bff;
+  --ag-celeste: #aee1f9;
+  --ag-blanco: #ffffff;
+  --ag-texto: #333;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 70px;
+  color: var(--ag-texto);
+}
+.banner {
+  background: linear-gradient(135deg, var(--ag-azul), var(--ag-celeste));
+  height: 300px;
+}
+.card-title {
+  font-weight: bold;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

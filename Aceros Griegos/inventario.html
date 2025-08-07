@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventario | SIGAG</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo-aceros.png" alt="Aceros Griegos" height="40">
+      SIGAG
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="punto_venta.html">Punto de Venta</a></li>
+        <li class="nav-item"><a class="nav-link active" href="inventario.html">Inventario</a></li>
+        <li class="nav-item"><a class="nav-link" href="administracion.html">Administración</a></li>
+        <li class="nav-item"><a class="nav-link" href="contabilidad.html">Contabilidad</a></li>
+        <li class="nav-item"><a class="nav-link" href="empleados.html">Empleados</a></li>
+        <li class="nav-item"><a class="nav-link" href="reporteria.html">Reportería</a></li>
+        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" href="proveedores.html">Proveedores</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+  <h2 class="text-primary mb-4">Módulo Inventario</h2>
+
+  <form>
+    <div class="mb-3">
+      <label class="form-label">Código del producto</label>
+      <input type="text" class="form-control" placeholder="Ej: PRD-001">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Nombre del producto</label>
+      <input type="text" class="form-control" placeholder="Ej: Varilla de acero 1/2 in">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Cantidad</label>
+      <input type="number" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Unidad de medida</label>
+      <input type="text" class="form-control" placeholder="Ej: kg, unidades">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Precio unitario</label>
+      <input type="number" class="form-control">
+    </div>
+
+    <div class="d-flex flex-wrap gap-2">
+      <button type="button" class="btn btn-outline-primary">Agregar producto</button>
+      <button type="button" class="btn btn-success">Actualizar stock</button>
+      <button type="reset" class="btn btn-warning">Limpiar formulario</button>
+      <button type="button" class="btn btn-danger">Eliminar producto</button>
+    </div>
+  
+    <table class="table table-bordered mt-4"><thead><tr><th>ID</th><th>Nombre</th><th>Tipo</th><th>Peso</th><th>Stock</th><th>Precio</th></tr></thead><tbody><tr><td>001</td><td>Varilla</td><td>A36</td><td>12kg</td><td>25</td><td>₡2500</td></tr></tbody></table>
+    <button type="button" class="btn btn-outline-danger">Notificar Bajo Stock</button></form>
+
+  <div class="mt-4 alert alert-info">
+    ⚠️ <strong>Mensajes de validación simulados:</strong><br>
+    - Producto ya existente<br>
+    - Datos incompletos o inválidos<br>
+    - Unidad de medida no reconocida
+  </div>
+</div>
+
+<footer class="bg-primary text-white text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 Aceros Griegos | Sistema SIGAG</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

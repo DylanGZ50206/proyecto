@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proveedores | SIGAG</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo-aceros.png" alt="Aceros Griegos" height="40">
+      SIGAG
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="punto_venta.html">Punto de Venta</a></li>
+        <li class="nav-item"><a class="nav-link" href="inventario.html">Inventario</a></li>
+        <li class="nav-item"><a class="nav-link" href="administracion.html">Administración</a></li>
+        <li class="nav-item"><a class="nav-link" href="contabilidad.html">Contabilidad</a></li>
+        <li class="nav-item"><a class="nav-link" href="empleados.html">Empleados</a></li>
+        <li class="nav-item"><a class="nav-link" href="reporteria.html">Reportería</a></li>
+        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="proveedores.html">Proveedores</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+  <h2 class="text-primary mb-4">Módulo Proveedores</h2>
+
+  <form>
+    <div class="mb-3">
+      <label class="form-label">Nombre de la empresa</label>
+      <input type="text" class="form-control" placeholder="Ej: Aceros del Norte S.A.">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Cédula jurídica / NIT</label>
+      <input type="text" class="form-control" placeholder="Ej: 3-101-456789">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Persona de contacto</label>
+      <input type="text" class="form-control" placeholder="Ej: Laura Pérez">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" placeholder="Ej: contacto@proveedor.com">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Teléfono</label>
+      <input type="tel" class="form-control" placeholder="Ej: 2222-3333">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Dirección</label>
+      <textarea class="form-control" rows="2" placeholder="Ej: Heredia, frente a la universidad..."></textarea>
+    </div>
+
+    <div class="d-flex flex-wrap gap-2">
+      <button type="button" class="btn btn-outline-primary">Agregar proveedor</button>
+      <button type="button" class="btn btn-success">Actualizar datos</button>
+      <button type="reset" class="btn btn-warning">Limpiar formulario</button>
+      <button type="button" class="btn btn-danger">Eliminar proveedor</button>
+    </div>
+  
+    <input type="email" class="form-control" placeholder="Confirmar correo electrónico">
+    <button type="button" class="btn btn-primary">Registrar Cliente</button>
+    <div class="alert alert-danger mt-3">Este cliente ya está registrado</div>
+    <button type="button" class="btn btn-primary">Registrar Proveedor</button></form>
+
+  <div class="mt-4 alert alert-info">
+    ⚠️ <strong>Mensajes de validación simulados:</strong><br>
+    - Correo inválido<br>
+    - Cédula jurídica duplicada<br>
+    - Dirección incompleta
+  </div>
+</div>
+
+<footer class="bg-primary text-white text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 Aceros Griegos | Sistema SIGAG</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
